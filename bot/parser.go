@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/austinov/go-recipes/rocker-bot/common"
+	"github.com/austinov/rocker-bot/common"
 )
 
 type Query struct {

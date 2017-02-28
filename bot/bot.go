@@ -14,9 +14,9 @@ import (
 	"time"
 
 	"github.com/austinov/go-recipes/backoff"
-	"github.com/austinov/go-recipes/rocker-bot/common"
-	"github.com/austinov/go-recipes/rocker-bot/config"
-	"github.com/austinov/go-recipes/rocker-bot/store"
+	"github.com/austinov/rocker-bot/common"
+	"github.com/austinov/rocker-bot/config"
+	"github.com/austinov/rocker-bot/store"
 
 	"golang.org/x/net/websocket"
 )

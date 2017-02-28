@@ -3,11 +3,11 @@ package main
 import (
 	"log"
 
-	"github.com/austinov/go-recipes/rocker-bot/bot"
-	"github.com/austinov/go-recipes/rocker-bot/config"
-	"github.com/austinov/go-recipes/rocker-bot/loader/cmetal"
-	"github.com/austinov/go-recipes/rocker-bot/store"
-	"github.com/austinov/go-recipes/rocker-bot/store/pg"
+	"github.com/austinov/rocker-bot/bot"
+	"github.com/austinov/rocker-bot/config"
+	"github.com/austinov/rocker-bot/loader/cmetal"
+	"github.com/austinov/rocker-bot/store"
+	"github.com/austinov/rocker-bot/store/pg"
 )
 
 func main() {

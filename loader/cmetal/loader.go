@@ -9,10 +9,10 @@ import (
 	"time"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/austinov/go-recipes/rocker-bot/common"
-	"github.com/austinov/go-recipes/rocker-bot/config"
-	"github.com/austinov/go-recipes/rocker-bot/loader"
-	"github.com/austinov/go-recipes/rocker-bot/store"
+	"github.com/austinov/rocker-bot/common"
+	"github.com/austinov/rocker-bot/config"
+	"github.com/austinov/rocker-bot/loader"
+	"github.com/austinov/rocker-bot/store"
 )
 
 type cmetalBand struct {
@@ -69,8 +69,10 @@ func (l *CMetalLoader) Start() error {
 			if err := l.do(); err != nil {
 				return err
 			}
-		case <-l.done:
-			return nil
+		case _, ok := <-l.done:
+			if !ok {
+				return nil
+			}
 		}
 	}
 }
@@ -119,8 +121,10 @@ func (l *CMetalLoader) loadBands(ignore <-chan interface{}, outBands chan<- inte
 				name := ss.Text()
 				if id != "" && name != "" {
 					select {
-					case <-l.done:
-						return
+					case _, ok := <-l.done:
+						if !ok {
+							return
+						}
 					default:
 						if name != "band" { // reserved word
 							outBands <- cmetalBand{

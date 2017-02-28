@@ -1,10 +1,10 @@
 hash: 88c6f37c12ccfad1658e068eb21109a5d03666a3b2f04957b6142ddfe104dc0a
-updated: 2017-02-26T16:46:21.211087323+03:00
+updated: 2017-02-28T01:37:52.820669809+03:00
 imports:
 - name: github.com/andybalholm/cascadia
   version: 349dd0209470eabd9514242c688c403c0926d266
 - name: github.com/austinov/go-recipes
-  version: 78b1c4c461e6fd2ee3cbd807ba1ba80b8c054706
+  version: a9ce3b1d3f8fd3e6618a578c43e54355182ac4a5
   subpackages:
   - backoff
   - rocker-bot/bot
@@ -21,7 +21,7 @@ imports:
 - name: github.com/PuerkitoBio/goquery
   version: e1271ee34c6a305e38566ecd27ae374944907ee9
 - name: golang.org/x/net
-  version: 10c134ea0df15f7e34d789338c7a2d76cc7a3ab9
+  version: 906cda9512f77671ab44f8c8563b13a8e707b230
   subpackages:
   - html
   - html/atom
