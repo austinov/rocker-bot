@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/austinov/rocker-bot.svg?branch=master)](https://travis-ci.org/austinov/rocker-bot)
+
 # rocker-bot
 
 Rocker is a slack bot. It shows calendar of rock-band's concerts and rock events in the cities.
