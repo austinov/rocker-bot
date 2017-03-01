@@ -5,13 +5,6 @@ import:
 - package: github.com/austinov/go-recipes
   subpackages:
   - backoff
-  - rocker-bot/bot
-  - rocker-bot/common
-  - rocker-bot/config
-  - rocker-bot/loader
-  - rocker-bot/loader/cmetal
-  - rocker-bot/store
-  - rocker-bot/store/pg
 - package: github.com/lib/pq
 - package: golang.org/x/net
   subpackages:
