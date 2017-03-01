@@ -64,7 +64,7 @@ To communicate with the bot you can use the following notation:
 
 - to list events in city till the date:
 ```
-	@rocker events in Helsinki **till** 01 Jan 2017
+	@rocker events in Helsinki till 01 Jan 2017
 ```
 
 - to list events in city since/till dates
